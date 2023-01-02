@@ -1,7 +1,7 @@
 # ⚡ CASHOUT ⚡ 
 deadline extended
 **Cashout** (this is getting tricky)
-is a crypto [off-ramping](https://www.babypips.com/crypto/learn/what-are-fiat-on-ramps-and-off-ramps) solution for [Sub-Saharan Africa](https://en.wikipedia.org/wiki/Sub-Saharan_Africa) .We have built an easily interactable website to allow users to cashout their crypto currency for their local fiat currency instantly.
+is a crypto [off-ramping](https://www.babypips.com/crypto/learn/what-are-fiat-on-ramps-and-off-ramps) solution for [Sub-Saharan Africa](https://en.wikipedia.org/wiki/Sub-Saharan_Africa). We have built an easily interactable website to allow users to cashout their crypto currency for their local fiat currency instantly.
 
 Cashout also has is also developing an API as a Service platform that provices an API to allow other developers connect to their site for easily offramping crypto to the end users.
 
