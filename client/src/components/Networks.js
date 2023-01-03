@@ -5,6 +5,7 @@ import { useOnClickOutside } from "../utils"
 import styles from "../styles"
 import chains from "../utils/cryptoname.json"
 import { useEthers } from "@usedapp/core"
+//import { handlePriceFeed } from "../utils/pricefeed";
 const Networks = () => {
   const [showList, setShowList] = useState(false)
   const [activeChain, setActiveChain] = useState("Select Network")
@@ -12,6 +13,7 @@ const Networks = () => {
   const ref = useRef()
 
   useOnClickOutside(ref, () => setShowList(false))
+  //console.log(activeChain)
   return (
     <div className='relative' onClick={() => setShowList(!showList)}>
       <button className={styles.currencyButton}>

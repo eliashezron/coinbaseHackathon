@@ -63,14 +63,19 @@ const Exchange = () => {
       cashOutToken
     )
     notify("Please Approve Transaction")
-    const x = await approve(amt)
-    if (!x) {
-      notify("Token not Approved")
-      throw new Error("Token not Approved")
-    }
-    notify("Please sign the transaction")
     try {
-      await depositToken(amt, phoneNo, library, intocurrency, currency)
+      const x = await approve(amt, library, networkHandler, cashOutToken)
+      if (!x) throw new Error("Token not Approved")
+      notify("Please sign the transaction")
+      await depositToken(
+        amt,
+        phoneNo,
+        library,
+        intocurrency,
+        currency,
+        networkHandler,
+        cashOutToken
+      )
     } catch (error) {
       toast.error(error.message)
     }
@@ -129,10 +134,9 @@ const Exchange = () => {
           phoneprefix={prefix}
         />
       </div>
-
       <button
         onClick={sendtx}
-        className={`${"bg-emerald-600 text-white"} ${styles.actionButton}`}
+        className={`${"bg-sky-700 text-white"} ${styles.actionButton}`}
       >
         {"Approve"}
       </button>

@@ -48,15 +48,32 @@ input[type="number"] {
   filter: blur(200px);
 }
 
-.Toastify__toast-container--top-left{ top: 5em;
-}
-
 .gradient-border {
   background: linear-gradient(
     168.82deg,
-    #ffcf00 1.7%,
+    #1bb2de 1.7%,
     rgba(155, 111, 238, 0) 27.12%,
     rgba(123, 127, 234, 0) 61.28%,
-    #35D07F  99.52%
+    #1bb2de 99.52%
   );
+}
+.loader {
+  border: 5px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 5px solid blue;
+  border-bottom: 5px solid blue;
+  width: 10px;
+  height:10px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }

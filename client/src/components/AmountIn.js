@@ -4,6 +4,7 @@ import { useOnClickOutside } from "../utils"
 import styles from "../styles"
 import tokens from "../utils/tokenname.json"
 import { handlePriceFeed } from "../utils/pricefeed"
+
 const AmountIn = ({ value, onChange, onChain, inUsd, onToken, taddress }) => {
   const [showList, setShowList] = useState(false)
   const [activeToken, setActiveToken] = useState("Select")
@@ -69,11 +70,22 @@ const AmountIn = ({ value, onChange, onChain, inUsd, onToken, taddress }) => {
                       const z = x * 10 ** -10 * y
                       inUsd(z)
                       console.log(z)
+                    }
+                    if (
+                      pricefeed === "0x2DE7E4a9488488e0058B95854CC2f7955B35dC9b"
+                    ) {
+                      const x = await handlePriceFeed(pricefeed)
+                      const y = await handlePriceFeed(
+                        "0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419"
+                      )
+                      const z = x * 10 ** -10 * y
+                      inUsd(z)
+                      console.log(z)
                     } else {
                       const z = await handlePriceFeed(pricefeed)
                       inUsd(z)
-                      console.log(z)
                     }
+
                     setShowList(false)
                   }}
                 >

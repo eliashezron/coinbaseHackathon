@@ -4,12 +4,14 @@ const styles = {
   innerContainer:
     "flex justify-between items-center flex-col max-w-[1280px] w-full",
   header: "flex flex-row justify-between items-center w-full sm:py-10 py-6",
+  subheader: "flex items-center justify-center py-3 bg-site-dim2 w-full  font-poppins font-bold text-white rounded-xl",
   Rheader: "flex flex-row justify-end  w-full",
-  exchangeContainer:
-    "flex-1 flex justify-start items-center flex-col w-full",
+  sideBySide: "flex flex-row justify-end",
+  nftGrid: "ml-8 grid grid-cols-2 gap-5",
+  exchangeContainer: "flex-1 flex justify-start items-center flex-col w-full",
   headTitle: "text-white font-poppins font-black text-5xl tracking-wide",
   subTitle: "text-dim-white font-poppins font-medium mt-3 text-base",
-  exchangeBoxWrapper: "mt-10 w-full flex justify-center",
+  exchangeBoxWrapper: "mt-10 mb-2 w-full flex justify-center",
   exchangeBox:
     "relative md:max-w-[700px] md:min-w-[500px] min-w-full max-w-full gradient-border p-[2px] rounded-3xl",
   exchange:
@@ -34,18 +36,20 @@ const styles = {
 
   // WalletButton
   walletButton:
-    "ml-3 mr-3 bg-emerald-600 border-none outline-none px-6 py-2 font-poppins font-bold text-lg text-white rounded-3xl leading-[24px] hover:bg-emerald-400 transition-all",
+    "ml-3 mr-3 bg-sky-700 border-none outline-none px-6 py-2 font-poppins font-bold text-lg text-white rounded-3xl leading-[24px] hover:bg-sky-400 transition-all",
 
   // loader
   loader: "flex justify-center items-center flex-col w-full min-h-full",
   loaderImg: "w-56 h-56 object-contain",
   loaderText:
     "font-poppins font-normal text-dim-white text-lg text-center mt-10",
-
+  NftImg: " rounded-2xl",
   // balance
   balance: "w-full text-left mt-2 ml-2",
+  left: "font-poppins font-normal text-green-600 text-right mr-2 mt-2 w-full ",
+  right: "font-poppins font-normal text-red-600 text-right mr-2 mt-2 w-full ",
   balanceText: "font-poppins font-normal text-dim-white",
   balanceBold: "font-semibold text-white",
-};
+}
 
-export default styles;
+export default styles
