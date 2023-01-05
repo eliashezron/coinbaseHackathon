@@ -9,6 +9,9 @@ import three from "./3.png"
 import four from "./4.png"
 import five from "./5.png"
 import six from "./6.png"
+import coinbase from "./coinbase.png"
+import walletconnect from "./walletconnectlogo.png"
+import metamask from "./metamaskWallet.png"
 export {
   chevronDown,
   ethereumLogo,
@@ -21,4 +24,7 @@ export {
   five,
   six,
   polygonMaticLogo,
+  coinbase,
+  walletconnect,
+  metamask,
 }
