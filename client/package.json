@@ -5,6 +5,7 @@
   "proxy": "http://localhost:5000",
   "dependencies": {
     "@apollo/client": "^3.7.1",
+    "@coinbase/wallet-sdk": "^3.6.3",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@ethersproject/contracts": "^5.7.0",
@@ -38,7 +39,7 @@
     "react-toastify": "^9.1.1",
     "styled-components": "^5.3.6",
     "web-vitals": "^2.1.4",
-    "web3": "^1.8.0",
+    "web3": "^1.8.1",
     "web3-react": "^5.0.5"
   },
   "scripts": {

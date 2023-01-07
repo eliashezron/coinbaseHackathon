@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react"
 import { shortenAddress, useEthers, useLookupAddress } from "@usedapp/core"
-
+// import WalletConnectProvider from "@walletconnect/web3-provider"
+import { WalletLinkConnector } from "@web3-react/walletlink-connector"
+// import { coinbase, walletconnect, metamask } from "../assets"
 import styles from "../styles"
 
 const WalletButton = () => {
