@@ -36,7 +36,7 @@ const WalletButton = () => {
         url: `https://mainnet.infura.io/v3/a22b6958cc5449a6a5bc6dc4e2c26a7a`,
         appName: "CASHOUT",
 
-        supportedChainIds: [1, 3, 4, 5, 42],
+        supportedChainIds: [1, 3, 4, 5, 97, 80001],
       })
       await activate(provider)
     } catch (error) {
