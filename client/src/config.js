@@ -1,9 +1,13 @@
-import { Mumbai } from "@usedapp/core"
+import { Evmos } from "./evmosChain"
+import { Mumbai, Goerli, BSCTestnet } from "@usedapp/core"
 
 export const DAPP_CONFIG = {
-  readOnlyChainId: Mumbai.chainId,
+  readOnlyChainId: Evmos.chainId,
   readOnlyUrls: {
-    [Mumbai.chainId]: `https://neat-clean-pool.matic-testnet.discover.quiknode.pro/45c26e01961dc7f5bb4a3e7a99e16f4358774f61`,
+    [Mumbai.chainId]: `https://polygon-mumbai.g.alchemy.com/v2/QWBjR1zQlh9_j3wnnDHctBnHmn-Obao3`,
+    [Goerli.chainId]: `https://goerli.infura.io/v3/379d2d85420a445cb0f197f6c7b01977`,
+    [BSCTestnet.chainId]: `https://data-seed-prebsc-2-s1.binance.org:8545/`,
+    [Evmos.chainId]: "https://eth.bd.evmos.org:8545",
   },
   noMetamaskDeactivate: true,
 }
