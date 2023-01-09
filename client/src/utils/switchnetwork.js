@@ -32,17 +32,6 @@ const networks = {
     rpcUrls: ["https://matic-mumbai.chainstacklabs.com"],
     blockExplorerUrls: ["https://mumbai.polygonscan.com/"],
   },
-  9001: {
-    chainId: `0x${Number(9001).toString(16)}`,
-    chainName: "Evmos",
-    nativeCurrency: {
-      name: "EVMOS",
-      symbol: "EVMOS",
-      decimals: 18,
-    },
-    rpcUrls: ["https://eth.bd.evmos.org:8545"],
-    blockExplorerUrls: ["https://evm.evmos.org"],
-  },
   97: {
     chainId: `0x${Number(97).toString(16)}`,
     chainName: "Binance Smart Chain Testnet",

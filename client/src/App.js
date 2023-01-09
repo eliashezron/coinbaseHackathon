@@ -14,7 +14,7 @@ const App = () => {
         <div class={styles.subheader}>
           <p class=''>
             {" "}
-            ⚡ CONVIENTLY SWAP CRYPTO FOR FIAT⚡⚡ POWERED BY EVMOS⚡{" "}
+            ⚡ CONVIENTLY SWAP CRYPTO FOR FIAT⚡⚡ POWERED BY POLYGON⚡{" "}
           </p>
         </div>
         <header className={styles.header}>

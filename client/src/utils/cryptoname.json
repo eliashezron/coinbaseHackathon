@@ -16,11 +16,5 @@
     "chainName": "BSC Testnet",
     "chainid": "97",
     "pricefeed": "0x14e613AC84a31f709eadbdF89C6CC390fDc9540A"
-  },
-  {
-    "token": "Evmos",
-    "chainName": "Evmos",
-    "chainid": "9001",
-    "pricefeed": "0x14e613AC84a31f709eadbdF89C6CC390fDc9540A"
   }
 ]
