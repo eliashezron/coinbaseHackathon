@@ -1,30 +1,13 @@
 {
   "80001": {
-    "CashOut": "0xC759Bb0e3c478a787A7A59fbc553caa40668Db94",
+    "MinimalForwarder": "0x56860f6E1592ecEC05cc17C722eAf5960A597908",
+    "CashOut": "0x9Eee3Ed0B16902bfdC11769672eaa8C5D4504ff6",
+    "URL": "https://api.defender.openzeppelin.com/autotasks/88bd7556-ef38-4717-aa00-9db30f904c56/runs/webhook/e43ccace-89ee-47fe-ba09-47f0b0e551bc/RTgvHeNiMapberzkjhH3sU",
     "Token": {
-      "USDT": "0xc5F5CE900038C79B4F47865551823653c5032EcC",
-      "USDC": "0x5dA0fE3c987F6859BA4F34262ad1B61468d020a4"
-    }
-  },
-  "97": {
-    "CashOut": "0xafB5d29c6df9Ea4AA69F9eE0fF873DaAb9785D83",
-    "Token": {
-      "USDT": "0xc28a0B97F8d5780685a3BDaBD4d2174329dCe541",
-      "USDC": "0x88927f8f1Ac2b7C7E7C4F8EDfA12d02bEca50834"
-    }
-  },
-  "5": {
-    "CashOut": "0x833e018B765087b6be5fd4830019ec43964F8Dcb",
-    "Token": {
-      "USDT": "0xeeA9b2306Fb7b729f4E352E51CCc856aA56A96e2",
-      "USDC": "0x0F9e51d96c648aef7003bBA38044ADdf3d050663"
-    }
-  },
-  "9001": {
-    "CashOut": "0x833e018B765087b6be5fd4830019ec43964F8Dcb",
-    "Token": {
-      "USDT": "0xeeA9b2306Fb7b729f4E352E51CCc856aA56A96e2",
-      "USDC": "0x0F9e51d96c648aef7003bBA38044ADdf3d050663"
-    }
+      "USDC": "0x2E80e330E6D72bA5D74A0b466ef525e244b904f4",
+      "USDT": "0x94Fa611d6fC3E7d58b7B9D30a9F7cB3F36B5a830",
+      "DAI": "0x242143931399f0B1Aa98183dc34896506d2B23EF"
+    },
+    "CashOutPuppies": "0xeA3103DFED86fb85b202cC80d05b14892608cbB3"
   }
 }
