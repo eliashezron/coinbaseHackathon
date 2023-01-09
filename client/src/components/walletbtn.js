@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react"
 import { shortenAddress, useEthers, useLookupAddress } from "@usedapp/core"
-import WalletConnectProvider from "@walletconnect/web3-provider"
+// import WalletConnectProvider from "@walletconnect/web3-provider"
 import { WalletLinkConnector } from "@web3-react/walletlink-connector"
-import { DialogContent, IconButton } from "@mui/material"
+import { DialogContent, IconButton, Dialog } from "@mui/material"
 import CloseIcon from "@mui/icons-material/Close"
 import styles from "../styles"
 import { coinbase, walletconnect, metamask } from "../assets"
@@ -31,17 +31,17 @@ const WalletButton = () => {
   const handleClose = () => {
     setOpen(false)
   }
-  async function onConnect() {
-    try {
-      const provider = new WalletConnectProvider({
-        infuraId: "a22b6958cc5449a6a5bc6dc4e2c26a7a",
-      })
-      await provider.enable()
-      await activate(provider)
-    } catch (error) {
-      console.error(error)
-    }
-  }
+  // async function onConnect() {
+  //   try {
+  //     const provider = new WalletConnectProvider({
+  //       infuraId: "a22b6958cc5449a6a5bc6dc4e2c26a7a",
+  //     })
+  //     await provider.enable()
+  //     await activate(provider)
+  //   } catch (error) {
+  //     console.error(error)
+  //   }
+  // }
   async function onCoinbaseConnect() {
     try {
       const provider = new WalletLinkConnector({
@@ -149,7 +149,7 @@ const WalletButton = () => {
             </button>
           </div>
         </DialogContent>
-        <DialogContent dividers>
+        {/* <DialogContent dividers>
           <div>
             <button
               onClick={onConnect}
@@ -174,7 +174,7 @@ const WalletButton = () => {
               WALLET CONNECT
             </button>
           </div>
-        </DialogContent>
+        </DialogContent> */}
       </BootstrapDialog>
     </>
   )
